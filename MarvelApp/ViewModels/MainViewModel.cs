@@ -9,6 +9,7 @@ namespace MarvelApp.ViewModels
         private static MainViewModel instance;
 
         public HeroesViewModel Heroes { get; set; }
+        public HeroeDetailViewModel HeroeDetail { get; set; }
 
         public MainViewModel()
         {

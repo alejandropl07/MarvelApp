@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MarvelApp.ViewModels;
+using MarvelApp.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +12,8 @@ namespace MarvelApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainViewModel.GetInstance().Heroes = new HeroesViewModel();
+            this.MainPage = new NavigationPage(new HeroesPage());
         }
 
         protected override void OnStart()

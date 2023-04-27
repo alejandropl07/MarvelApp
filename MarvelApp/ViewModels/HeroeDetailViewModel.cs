@@ -7,9 +7,9 @@ namespace MarvelApp.ViewModels
 {
     public class HeroeDetailViewModel
     {
-        public Heroe Heroe { get; set; }
+        public Results Heroe { get; set; }
 
-        public HeroeDetailViewModel(Heroe heroe)
+        public HeroeDetailViewModel(Results heroe)
         {
             this.Heroe = heroe;
         }

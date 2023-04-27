@@ -9,7 +9,7 @@
              BindingContext="{Binding Main, Source={StaticResource  Locator}}">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="30" VerticalOptions="Center" BindingContext="{Binding HeroeDetail}">
+            <StackLayout Padding="10" BindingContext="{Binding HeroeDetail}">
                 <Label Text="Nombre"  />
                 <Entry IsReadOnly="True" Text="{Binding Heroe.Name}"/>
                 <Label Text="Descripción"  />
